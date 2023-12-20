@@ -2,7 +2,6 @@ class Boxer {
     firstName: string;
     lastName: string;
     email: string;
-    password: string;
     height: string;
     weight: string;
     fightNumber: string;
@@ -18,7 +17,6 @@ class Boxer {
         firstName: string,
         lastName: string,
         email: string,
-        password: string,
         height: string,
         weight: string,
         fightNumber: string,
@@ -33,7 +31,6 @@ class Boxer {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.password = password;
         this.height = height;
         this.weight = weight;
         this.fightNumber = fightNumber;

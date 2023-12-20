@@ -1,0 +1,54 @@
+@base_url=http://localhost:3000/api
+###
+{{base_url}}/users
+###
+GET {{base_url}}/users
+
+###
+POST {{base_url}}/users
+Content-Type: application/json
+
+{
+    "last_name": "mouhamed",
+    "first_name": "saadaoui",
+    "email": "mmm.doe@example.com",
+    "password": "password123"
+}
+
+###
+{{base_url}}/boxers
+###
+GET {{base_url}}/boxers
+
+###
+POST {{base_url}}/boxers
+Content-Type: application/json
+
+{
+    "first_name": "mouhamed",
+    "last_name": "aaa",
+    "email": "saa.qs@example.com",
+    "height": "5'10\"",
+    "weight": "220 lbs",
+    "fight_number": "50",
+    "win": "44",
+    "losses": "6",
+    "kos": "34",
+    "gym_number": "1234",
+    "title": "Heavyweight Champion",
+    "image_link": "https://example.com/mike-tyson.jpg",
+    "trainer_name": "Cus D'Amato"
+}
+
+###
+POST {{base_url}}/auth/login
+Content-Type: application/json
+
+{
+    "mail": "saadaoui.doe@example.com",
+    "password": "password123"
+}
+
+###
+{{base_url}}/boxers/favorites
+Authorization: Bearer test@test.com-lqc676lf

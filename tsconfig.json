@@ -9,6 +9,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "strictPropertyInitialization": false,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "typeRoots": ["./typings", "./node_modules/@types"]
   }
 }
