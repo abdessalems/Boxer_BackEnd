@@ -11,12 +11,13 @@ Content-Type: application/json
 {
     "last_name": "mouhamed",
     "first_name": "saadaoui",
-    "email": "mmm.doe@example.com",
+    "email": "mmm.Goe@FHP.com",
     "password": "password123"
 }
 
 ###
-{{base_url}}/boxers
+GET {{base_url}}/boxers/:id
+
 ###
 GET {{base_url}}/boxers
 
@@ -25,30 +26,45 @@ POST {{base_url}}/boxers
 Content-Type: application/json
 
 {
-    "first_name": "mouhamed",
-    "last_name": "aaa",
-    "email": "saa.qs@example.com",
-    "height": "5'10\"",
-    "weight": "220 lbs",
-    "fight_number": "50",
-    "win": "44",
-    "losses": "6",
-    "kos": "34",
-    "gym_number": "1234",
-    "title": "Heavyweight Champion",
-    "image_link": "https://example.com/mike-tyson.jpg",
-    "trainer_name": "Cus D'Amato"
+        "first_name": "Khamzat",
+        "last_name": "Chimaev",
+        "email": "khamzat_chimaev@example.com",
+        "height": "6'2\"",
+        "weight": "170 lbs",
+        "fight_number": "10",
+        "win": "10",
+        "losses": "0",
+        "kos": "7",
+        "gym_number": "5678",
+        "title": "Welterweight Rising Star",
+        "image_link": "https://example.com/khamzat_chimaev.jpg",
+        "trainer_name": "Ali Abdelaziz"
+    }
+
+###
+PUT {{base_url}}/boxers/1
+Content-Type: application/json
+
+{
+    "first_name": "UpdatedName"
 }
+
+###
+DELETE {{base_url}}/boxers/:id
 
 ###
 POST {{base_url}}/auth/login
 Content-Type: application/json
 
 {
-    "mail": "saadaoui.doe@example.com",
+    "email": "mmm.Goe@FHP.com",
     "password": "password123"
 }
+###
+POST {{base_url}}/auth/logout
+Authorization: Bearer mmm.Goe@FHP.com-lqeyfrle
+
 
 ###
 {{base_url}}/boxers/favorites
-Authorization: Bearer test@test.com-lqc676lf
+Authorization: Bearer mmm.Goe@FHP.com-lqe15fc7

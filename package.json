@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "ts-node src/server/server.ts",
+    "start": "nodemon --exec ts-node src/server/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -17,7 +17,8 @@
     "@types/node": "^20.10.5",
     "supertest": "^6.3.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "nodemon": "^2.0.15" 
   },
   "keywords": [],
   "description": ""
